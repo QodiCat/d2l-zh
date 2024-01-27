@@ -214,7 +214,7 @@ masked_softmax(paddle.rand((2, 2, 4)), paddle.to_tensor([[1, 3], [2, 4]]))
 ## [**加性注意力**]
 :label:`subsec_additive-attention`
 
-一般来说，当查询和键是不同长度的矢量时，可以使用加性注意力作为评分函数。
+一般来说，当查询和键是不同特征维度的矢量时，可以使用加性注意力作为评分函数。
 给定查询$\mathbf{q} \in \mathbb{R}^q$和
 键$\mathbf{k} \in \mathbb{R}^k$，
 *加性注意力*（additive attention）的评分函数为
